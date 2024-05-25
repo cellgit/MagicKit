@@ -11,6 +11,15 @@
 		CE724F0C2C01F0A30096AE19 /* MagicKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE724F012C01F0A30096AE19 /* MagicKit.framework */; };
 		CE724F112C01F0A30096AE19 /* MagicKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE724F102C01F0A30096AE19 /* MagicKitTests.swift */; };
 		CE724F122C01F0A30096AE19 /* MagicKit.h in Headers */ = {isa = PBXBuildFile; fileRef = CE724F042C01F0A30096AE19 /* MagicKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE724F8B2C01F37E0096AE19 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE724F8A2C01F37E0096AE19 /* NetworkError.swift */; };
+		CE724F8D2C01F39E0096AE19 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE724F8C2C01F39E0096AE19 /* ParameterEncoding.swift */; };
+		CE724F8F2C01F3B90096AE19 /* TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE724F8E2C01F3B90096AE19 /* TargetType.swift */; };
+		CE724F912C01F3D50096AE19 /* PluginType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE724F902C01F3D50096AE19 /* PluginType.swift */; };
+		CE724F932C01F3F10096AE19 /* NetworkLoggerPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE724F922C01F3F10096AE19 /* NetworkLoggerPlugin.swift */; };
+		CE724F952C01F40A0096AE19 /* ErrorHandlerPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE724F942C01F40A0096AE19 /* ErrorHandlerPlugin.swift */; };
+		CE724F972C01F4380096AE19 /* RetryPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE724F962C01F4380096AE19 /* RetryPlugin.swift */; };
+		CE724F992C01F4680096AE19 /* DataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE724F982C01F4680096AE19 /* DataParser.swift */; };
+		CE724F9B2C01F4950096AE19 /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE724F9A2C01F4950096AE19 /* NetworkProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +38,15 @@
 		CE724F052C01F0A30096AE19 /* MagicKit.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = MagicKit.docc; sourceTree = "<group>"; };
 		CE724F0B2C01F0A30096AE19 /* MagicKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagicKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE724F102C01F0A30096AE19 /* MagicKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicKitTests.swift; sourceTree = "<group>"; };
+		CE724F8A2C01F37E0096AE19 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		CE724F8C2C01F39E0096AE19 /* ParameterEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
+		CE724F8E2C01F3B90096AE19 /* TargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetType.swift; sourceTree = "<group>"; };
+		CE724F902C01F3D50096AE19 /* PluginType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PluginType.swift; sourceTree = "<group>"; };
+		CE724F922C01F3F10096AE19 /* NetworkLoggerPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLoggerPlugin.swift; sourceTree = "<group>"; };
+		CE724F942C01F40A0096AE19 /* ErrorHandlerPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandlerPlugin.swift; sourceTree = "<group>"; };
+		CE724F962C01F4380096AE19 /* RetryPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetryPlugin.swift; sourceTree = "<group>"; };
+		CE724F982C01F4680096AE19 /* DataParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataParser.swift; sourceTree = "<group>"; };
+		CE724F9A2C01F4950096AE19 /* NetworkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +89,7 @@
 		CE724F032C01F0A30096AE19 /* MagicKit */ = {
 			isa = PBXGroup;
 			children = (
+				CE724F892C01F36B0096AE19 /* Network */,
 				CE724F042C01F0A30096AE19 /* MagicKit.h */,
 				CE724F052C01F0A30096AE19 /* MagicKit.docc */,
 			);
@@ -83,6 +102,22 @@
 				CE724F102C01F0A30096AE19 /* MagicKitTests.swift */,
 			);
 			path = MagicKitTests;
+			sourceTree = "<group>";
+		};
+		CE724F892C01F36B0096AE19 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				CE724F8A2C01F37E0096AE19 /* NetworkError.swift */,
+				CE724F8C2C01F39E0096AE19 /* ParameterEncoding.swift */,
+				CE724F8E2C01F3B90096AE19 /* TargetType.swift */,
+				CE724F902C01F3D50096AE19 /* PluginType.swift */,
+				CE724F922C01F3F10096AE19 /* NetworkLoggerPlugin.swift */,
+				CE724F942C01F40A0096AE19 /* ErrorHandlerPlugin.swift */,
+				CE724F962C01F4380096AE19 /* RetryPlugin.swift */,
+				CE724F982C01F4680096AE19 /* DataParser.swift */,
+				CE724F9A2C01F4950096AE19 /* NetworkProvider.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,7 +197,7 @@
 				Base,
 			);
 			mainGroup = CE724EF72C01F0A30096AE19;
-			productRefGroup = CE724EF72C01F0A30096AE19 /* Products */;
+			productRefGroup = CE724EF72C01F0A30096AE19;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -194,7 +229,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE724F952C01F40A0096AE19 /* ErrorHandlerPlugin.swift in Sources */,
+				CE724F972C01F4380096AE19 /* RetryPlugin.swift in Sources */,
+				CE724F912C01F3D50096AE19 /* PluginType.swift in Sources */,
+				CE724F932C01F3F10096AE19 /* NetworkLoggerPlugin.swift in Sources */,
+				CE724F8F2C01F3B90096AE19 /* TargetType.swift in Sources */,
+				CE724F8D2C01F39E0096AE19 /* ParameterEncoding.swift in Sources */,
 				CE724F062C01F0A30096AE19 /* MagicKit.docc in Sources */,
+				CE724F8B2C01F37E0096AE19 /* NetworkError.swift in Sources */,
+				CE724F992C01F4680096AE19 /* DataParser.swift in Sources */,
+				CE724F9B2C01F4950096AE19 /* NetworkProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,6 +467,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WGTAZF6C7D;
@@ -444,6 +489,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WGTAZF6C7D;
