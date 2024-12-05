@@ -40,7 +40,6 @@ class UsersViewController: UIViewController, UITableViewDataSource, UITableViewD
     private func fetchData() {
         let parser1 = JSONDataParser<[User]>()
         let parser2 = JSONDataParser<[UserDetail]>()
-        
         provider.zip(.getUsers, parser1: parser1, .getUserDetails, parser2: parser2) { [weak self] result in
             DispatchQueue.main.async {
                 switch result {
